@@ -14,6 +14,14 @@ h5 {
     font-size: 15px;
 }
 
+h1{
+    font-family: 'Cardo', serif;
+}
+
+p{
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
 
 .liste_menu {
     display: none;
@@ -158,6 +166,34 @@ h5 {
 
 /****            ****/
 
+#omMig{
+    height: 750px;
+}
+
+.top_overskrift h1{
+    font-size: 95px;
+    line-height: 140px;
+}
+
+.top_overskrift{
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    color: white;
+    text-align: center;
+}
+
+.bund_overskrift{
+    position: absolute;
+    top: 271px;
+    left: 150px;
+    font-size: 30px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #989898;
+}
+
 
 #top {
     padding: 30px 0px 30px 0px;
@@ -169,21 +205,58 @@ h5 {
 #top h5 {
     z-index: 4;
     position: absolute;
+    font-size: 20px;
     top: -35px;
-    left: 75%;
+    left: 340px;
     color: rgba(255, 255, 255, 0.71);
+}
+
+.linje1 {
+    border-left: 2px solid rgba(242, 242, 242, 0.65);
+    height: 250px;
+    position: absolute;
+    top: 69.5%;
+    left: 50%;
+}
+
+/****       ****/
+
+
+.cvbillede{
+    width: 100%;
 }
 
 
 /****       ****/
 
-#mineopgaver h2 {
+
+#mineOpgaver img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+
+#mineOpgaver h2 {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     color: #ffcf76;
     font-size: 60px;
 }
 
+
+.hover figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    filter: blur(100%);
+    filter: opacity(50%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
 
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
@@ -232,28 +305,17 @@ h5 {
         font-size: 20px;
     }
 
-    .linje1 {
-        border-left: 2px solid rgba(242, 242, 242, 0.65);
-        height: 250px;
-        position: absolute;
-        top: 69.5%;
-        left: 50%;
-    }
-
     #mineopgaver h2 {
-        margin: 0px 0px 80px 0px;
-        border-top: 1px solid rgba(242, 242, 242, 0.65);
+        margin: 0px 0px 0px 0px;
+/*        border-top: 1px solid rgba(242, 242, 242, 0.65);*/
         border-radius: 90px;
         padding-top: 30px;
     }
 
     #mineopgaver img {
-        margin: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        box-shadow:
-            inset 0 2px 3px rgba(255, 255, 255, 0.3),
-            inset 0 -2px 3px rgba(0, 0, 0, 0.3),
-            0 1px 1px rgba(255, 255, 255, 0.9);
+        /*        border: 1px solid rgba(0, 0, 0, 0.05);
+        */
+        box-shadow: black;
     }
 
     /* END "xl-" 1200px and up */
