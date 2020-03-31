@@ -4,26 +4,38 @@
 /* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
 /**************************************************/
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-color: #f2e6d5;
 }
 
 h1 {
     font-family: 'Cardo', serif;
+    color: #654343;
+    font-size: 60px;
 }
 
 h2 {
-    color: #efefef;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
+    color: #42210b;
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    color: #cc7b60;
 }
 
 h5 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
 }
-
 
 p {
     font-family: 'Carrois Gothic SC', sans-serif;
@@ -95,7 +107,7 @@ p {
     margin-bottom: 5px;
     position: relative;
 
-    background: rgba(253, 253, 253, 0.65);
+    background: rgba(101, 67, 67, 0.54);
     border-radius: 3px;
 
     z-index: 1;
@@ -152,7 +164,7 @@ p {
     padding: 50px;
     padding-top: 125px;
 
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.96);
     list-style-type: none;
     /*    -webkit-font-smoothing: antialiased;*/
     /* to stop flickering of text in safari */
@@ -184,67 +196,111 @@ p {
 /**************************************************/
 
 
-.bund_overskrift {
-    position: absolute;
-    top: 271px;
-    left: 150px;
-    font-size: 30px;
-    line-height: 90px;
-    letter-spacing: 5px;
-    text-align: center;
-    color: #989898;
-}
-
 
 #top {
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 0px 0px;
     background-size: cover;
     height: 740px;
     text-align: end;
 }
 
-#top h5 {
-    z-index: 4;
-    position: absolute;
-    font-size: 20px;
-    top: -35px;
-    left: 340px;
-    color: rgba(255, 255, 255, 0.71);
-}
-
-.linje1 {
-    border-left: 2px solid rgba(242, 242, 242, 0.65);
-    height: 250px;
-    position: absolute;
-    top: 69.5%;
-    left: 50%;
-}
-
-#omMig {
-    height: 750px;
-}
-
-.top_overskrift h1 {
-    font-size: 95px;
-    line-height: 140px;
-}
 
 .top_overskrift {
-    position: absolute;
-    top: 190px;
-    left: 0px;
-    color: white;
     text-align: center;
+    position: absolute;
+    top: -410px;
+    left: 14%;
 }
 
+.top_blomster img {
+    width: 80%;
+}
 
+.top_blomster {}
+
+.blomst1 {
+
+    position: absolute;
+    top: -200px;
+    left: 2%;
+}
+
+.blomst2 {
+    position: absolute;
+    top: -750px;
+    left: 70%;
+
+}
 
 /****       ****/
 
+#cv {
+    padding: 290px 0px 0px 0px;
+    height: 1110px;
+}
+
+#cv_blomster img {
+    width: 60%;
+    position: absolute;
+    top: 60px;
+    left: 40%;
+    opacity: 30%
+}
 
 .cvbillede {
     width: 100%;
-    padding: 0px 40px 0px 40px;
+    max-width: 400px;
+    padding: 30px 40px 0px 40px;
+}
+
+/*
+#cv_blomster2 img {
+    position: absolute;
+    top: 140px;
+    left: 27%;
+    opacity: 30%;
+}
+*/
+
+.blomster_under_erfaring img {
+    position: relative;
+    top: 305px;
+    left: 10%;
+    opacity: 70%
+}
+
+#kompetencer {
+    padding: 500px 0px 50px 0px;
+}
+
+#kompetencer h2 {
+    padding: 10px 10px 20px 10px;
+}
+
+#kompetencer h3 {
+    padding: 20px 10px 0px 10px;
+    font-size: 40px;
+}
+
+#kompetencer p {
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+}
+
+#kompetencer img {
+    width: 100%;
+    padding: 10px 0px 30px 0px;
+}
+
+/**/
+
+#some {
+    text-align: center;
+}
+
+#some img {
+    width: 80%;
 }
 
 
@@ -252,7 +308,7 @@ p {
 
 
 #mineOpgaver {
-    padding: 10px 30px 10px 30px;
+    padding: 100px 30px 10px 30px;
 }
 
 #mineOpgaver img {
@@ -311,29 +367,31 @@ p {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    top: 100px;
-    left: 150px;
+    top: 300px;
+    left: 120px;
     font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
+    color: #42210b;
+    font-family: 'Cardo', serif;
     border: solid 1px white;
     border-radius: 0%;
-    padding: 10px;
+    padding: 15px 45px 15px 45px;
 }
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
     visibility: hidden;
-    width: 360px;
-    background-color: #555;
+    width: 450px;
+    /*    background-color: #555;
+    */
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    top: 205%;
+    top: -400%;
     left: 0%;
-    margin-left: -150px;
+    margin-left: -110px;
 }
 
 /* Popup arrow */
@@ -341,12 +399,13 @@ p {
     content: "";
     position: absolute;
     top: 100%;
-    left: 0%;
+    left: 45%;
     margin-left: -5px;
-    border-width: 5px;
+    border-width: 10px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
+
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
@@ -376,30 +435,139 @@ p {
     }
 }
 
-
-
 /**************************************************/
 /* // pop-up slut */
 /**************************************************/
 
 
 
-#kompetencer h2 {
-    text-align: center;
-    padding: 100px 0px 10px 0px;
+
+
+
+
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+@media (min-width: 576px) {
+    body {}
+
 }
 
-#kompetencer h3 {
-    color: #3c3c3c;
-    padding-bottom: 5px;
+/* END "sm-" 576px and up */
+
+
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+
+    .top_overskrift h1 {
+        font-size: 95px;
+        line-height: 140px;
+    }
+
+    .top_overskrift {
+        position: absolute;
+        top: -450px;
+        left: 10%;
+        color: white;
+        text-align: center;
+    }
+
 }
 
-#kompetencer img {
-    width: 100%;
-    padding: 10px 0px 30px 0px;
+/* END "md-" 768px and up */
+
+
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+
+    #omMig {
+        height: 750px;
+        padding-left: 220px;
+    }
+
+    .top_overskrift h1 {
+        font-size: 95px;
+        line-height: 140px;
+    }
+
+    .top_overskrift {
+        position: absolute;
+        top: -440px;
+        left: 20%;
+        color: white;
+        text-align: center;
+    }
+
+    .top_blomster img {
+        width: 80%;
+    }
+
+    .top_blomster {}
+
+    .blomst1 {
+        position: absolute;
+        top: -200px;
+        left: 2%;
+    }
+
+    .blomst2 {
+        position: absolute;
+        top: -750px;
+        left: 70%;
+
+    }
+
+
+    /* END "lg-" 992px and up */
+
+
+    /**************************************************/
+    /* // Extra large devices (large desktops, 1200px and up) */
+    /**************************************************/
+    @media (min-width: 1200px) {
+
+        #omMig {
+            height: 750px;
+            padding-left: 310px;
+        }
+
+
+        .top_overskrift {
+            position: absolute;
+            top: -440px;
+            left: 25%;
+            color: white;
+            text-align: center;
+        }
+
+        .top_blomster img {
+            width: 80%;
+        }
+
+        .top_blomster {}
+
+        .blomst1 {
+            position: absolute;
+            top: -200px;
+            left: 0%;
+        }
+
+        .blomst2 {
+            position: absolute;
+            top: -750px;
+            left: 80%;
+
+        }
+
+        /* END "xl-" 1200px and up */
+    }
+
+
 }
-
-
 
 /**************************************************/
 /* // timeline */
@@ -574,115 +742,3 @@ p {
 /**************************************************/
 /* // timeline slut */
 /**************************************************/
-
-
-
-
-
-/**************************************************/
-/* Small devices (landscape phones, 576px and up) */
-/**************************************************/
-@media (min-width: 576px) {
-    body {}
-}
-
-/* END "sm-" 576px and up */
-
-
-/**************************************************/
-/* // Medium devices (tablets, 768px and up) */
-/**************************************************/
-@media (min-width: 768px) {
-
-    #omMig {
-        height: 750px;
-        padding-left: 100px;
-    }
-
-    .top_overskrift h1 {
-        font-size: 95px;
-        line-height: 140px;
-    }
-
-    .top_overskrift {
-        position: absolute;
-        top: 190px;
-        left: 0px;
-        color: white;
-        text-align: center;
-    }
-}
-
-/* END "md-" 768px and up */
-
-
-/**************************************************/
-/* // Large devices (desktops, 992px and up) */
-/**************************************************/
-@media (min-width: 992px) {
-
-    #omMig {
-        height: 750px;
-        padding-left: 220px;
-    }
-
-    .top_overskrift h1 {
-        font-size: 95px;
-        line-height: 140px;
-    }
-
-    .top_overskrift {
-        position: absolute;
-        top: 190px;
-        left: 0px;
-        color: white;
-        text-align: center;
-    }
-}
-
-/* END "lg-" 992px and up */
-
-
-/**************************************************/
-/* // Extra large devices (large desktops, 1200px and up) */
-/**************************************************/
-@media (min-width: 1200px) {
-
-    #omMig {
-        height: 750px;
-        padding-left: 310px;
-    }
-
-    .top_overskrift h1 {
-        font-size: 95px;
-        line-height: 140px;
-    }
-
-    .top_overskrift {
-        position: absolute;
-        top: 190px;
-        left: 0px;
-        color: white;
-        text-align: center;
-    }
-
-
-    #top {
-        padding: 30px 0px 30px 0px;
-        background-size: cover;
-        height: 740px;
-        text-align: end;
-    }
-
-    #top h5 {
-        z-index: 4;
-        position: absolute;
-        top: -35px;
-        left: 87%;
-        color: rgba(255, 255, 255, 0.71);
-        font-size: 20px;
-    }
-
-
-    /* END "xl-" 1200px and up */
-}
