@@ -20,6 +20,14 @@ ScrollReveal().reveal('.opgave5', {
 });
 
 
+ScrollReveal().reveal('#kompetencer', {
+    delay: 900
+});
+ScrollReveal().reveal('#cv', {
+    delay: 900
+});
+
+
 // When the user clicks on <div>, open the popup
 function myFunction() {
     var popup = document.getElementById("myPopup");
