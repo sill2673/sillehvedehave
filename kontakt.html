@@ -18,90 +18,68 @@
 
 <body>
 
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-            <input type="checkbox" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="forside.html">
+            <img src="img/mitikon.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!--
-    Some spans to act as a hamburger.
-
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-            <ul id="menu">
-
-                <a href="forside.html">
-                    <li>FORSIDE</li>
-                </a>
-
-                <a href="projekter.html">
-                    <li>PROJEKTER</li>
-                </a>
-                <a href="om.html">
-                    <li>OM</li>
-                </a>
-                <a href="kontakt.html">
-                    <li>KONTAKT</li>
-                </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="forside.html">Forside</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="om.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <div class="liste_menu">
-        <ul>
-            <li><a href="forside.html">Forside</a></li>
-            <li><a href="projekter.html">Projekter</a></li>
-            <li><a href="om.html">Om</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </div>
 
     <main class="container">
 
-
-        <section id="kontakt_top">
-            <div class="col-12">
-                <h1>KONTAKT</h1>
+        <section id="kontakt" class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="kontakt_top">
+                    <h1>KONTAKT</h1>
+                </div>
             </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">
+                <div class="kontakt_info">
+                    <p>Tlf.: +45 31 41 43 73</p>
+                    <p>E-mail: sillehv@hotmail.com</p>
+                    <p>Adresse: Schleppegrellsgade, 2200 Nørrebro</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">
+                <div class="some">
+                    <a href="https://www.facebook.com/sillehv">
+                        <img src="img/facebook_ikon.png">
+                    </a>
+                    <a href="https://www.linkedin.com/in/sille-hvedehave-46a037164/" target="_blank">
+                        <img src="img/linkedin_ikon.png">
+                    </a>
+                    <a href="https://www.instagram.com/sillehvedehave/" target="_blank">
+                        <img src="img/instagram_ikon.png">
+                    </a>
+                </div>
+            </div>
+            <!--            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">-->
+            <div class="kontakt_blomster" target="_blank">
+                <img src="img/blomster4.png">
+            </div>
+            <!--            </div>-->
         </section>
-
-        <section id="kontakt_info">
-            <div class="col-12">
-                <p>Tlf.: +45 31 41 43 73</p>
-                <p>E-mail: sillehv@hotmail.com</p>
-                <p>Adresse: Schleppegrellsgade, 2200 Nørrebro</p>
-            </div>
-        </section>
-
-        <section id="some" class="row">
-            <div class="col-4">
-                <img src="img/facebook_ikon.png">
-            </div>
-            <div class="col-4">
-                <img src="img/linkedin_ikon.png">
-            </div>
-            <div class="col-4">
-                <img src="img/instagram_ikon.png">
-            </div>
-        </section>
-
 
     </main>
-
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

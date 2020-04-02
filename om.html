@@ -19,55 +19,28 @@
 
 <body>
 
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-            <input type="checkbox" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="forside.html">
+            <img src="img/mitikon.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!--
-    Some spans to act as a hamburger.
-
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-            <ul id="menu">
-
-                <a href="forside.html">
-                    <li>FORSIDE</li>
-                </a>
-
-                <a href="projekter.html">
-                    <li>PROJEKTER</li>
-                </a>
-                <a href="om.html">
-                    <li>OM</li>
-                </a>
-                <a href="kontakt.html">
-                    <li>KONTAKT</li>
-                </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="forside.html">Forside</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="om.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
-
-    <div class="liste_menu">
-        <ul>
-            <li><a href="forside.html">Forside</a></li>
-            <li><a href="projekter.html">Projekter</a></li>
-            <li><a href="om.html">Om</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </div>
 
     <main class="container">
 
@@ -79,16 +52,16 @@
 
         <section id="cv">
 
-            <div class="col-sm-12">
-                <div class="">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                <img src="img/mig.png" class="cvbillede" alt="sille hvedehave">
+            </div>
 
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
+                <div class="cv_top">
                     <h2>Mit navn er Sille</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veniam at et, veritatis aspernatur. Repellat minus dolore sequi praesentium ab necessitatibus rerum, quidem natus aperiam aliquid quaerat commodi autem soluta.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam doloremque enim voluptatem sit deleniti! Aperiam rem quos sit saepe molestiae delectus, ducimus sunt aliquid nam dicta aliquam beatae modi atque!</p>
                 </div>
-            </div>
-            <div class="col-sm-12">
-                <img src="img/mig.png" class="cvbillede" alt="sille hvedehave">
             </div>
         </section>
 

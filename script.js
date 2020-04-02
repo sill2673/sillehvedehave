@@ -42,7 +42,7 @@ ScrollReveal().reveal('.blomster_under_erfaring', {
     delay: 900
 });
 
-ScrollReveal().reveal('#', {
+ScrollReveal().reveal('#kontakt', {
     delay: 900
 });
 ScrollReveal().reveal('.', {
@@ -62,9 +62,4 @@ ScrollReveal().reveal('.', {
 function myFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
-}
-
-function myFunction() {
-    var popup2 = document.getElementById("myPopup2");
-    popup2.classList.toggle("show");
 }

@@ -16,55 +16,30 @@
 
 <body>
 
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-            <input type="checkbox" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="forside.html">
+            <img src="img/mitikon.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!--
-    Some spans to act as a hamburger.
-
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-            <ul id="menu">
-
-                <a href="forside.html">
-                    <li>FORSIDE</li>
-                </a>
-
-                <a href="projekter.html">
-                    <li>PROJEKTER</li>
-                </a>
-                <a href="om.html">
-                    <li>OM</li>
-                </a>
-                <a href="kontakt.html">
-                    <li>KONTAKT</li>
-                </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="forside.html">Forside</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="om.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <div class="liste_menu">
-        <ul>
-            <li><a href="forside.html">Forside</a></li>
-            <li><a href="projekter.html">Projekter</a></li>
-            <li><a href="om.html">Om</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </div>
+
 
     <main class="container">
 
@@ -101,7 +76,7 @@
                 <div class="hover">
                     <div class="opgave7">
 
-                        <figure><a href="https://www.proathletes.dk/">
+                        <figure><a href="https://www.proathletes.dk/" target="_blank">
                                 <img alt="Qries" src="img/proathletes.png">
                             </a></figure>
 
@@ -117,7 +92,7 @@
                 <div class="hover">
                     <div class="opgave1">
 
-                        <figure> <a href="http://sillehv.com/kea/2-semester/t7_projekt-master%202/">
+                        <figure> <a href="http://sillehv.com/kea/2-semester/t7_projekt-master%202/" target="_blank">
                                 <img alt="Qries" src="img/shopaholic.png" class="image">
                             </a></figure>
 
@@ -135,7 +110,7 @@
                     <div class="opgave6">
 
                         <figure><a href="http://sonjakristensen.dk/">
-                                <img alt="Qries" src="img/sonjakristensen.png">
+                                <img alt="Qries" src="img/sonjakristensen.png" target="_blank">
                             </a></figure>
 
                         <h2>Shopaholic</h2>
@@ -149,7 +124,7 @@
                 <div class="hover">
                     <div class="opgave2">
 
-                        <figure> <a href="http://sillehv.com/kea/1.%20semester/portfolio_eksamen/portfolio.html">
+                        <figure> <a href="http://sillehv.com/kea/1.%20semester/portfolio_eksamen/portfolio.html" target="_blank">
                                 <img alt="Qries" src="img/portfolio_1sem.png">
                             </a></figure>
 
@@ -165,7 +140,7 @@
                 <div class="hover">
                     <div class="opgave3">
 
-                        <figure><a href="https://sillehv.com/kea/3.semester/webfeature/wordpress/?fbclid=IwAR3i0djHGA1Ujxv_f4xlJ_DNg5sbS64jJrbjsQRYdLW5vFFY_AaWcYTF0Esl">
+                        <figure><a href="https://sillehv.com/kea/3.semester/webfeature/wordpress/?fbclid=IwAR3i0djHGA1Ujxv_f4xlJ_DNg5sbS64jJrbjsQRYdLW5vFFY_AaWcYTF0Esl" target="_blank">
                                 <img alt="Qries" src="img/webfeature2.png">
                             </a></figure>
 
@@ -180,7 +155,7 @@
                 <div class="hover">
                     <div class="opgave5">
 
-                        <figure><a href="http://sillehv.com/kea/3.semester/content_marketing/simple/?">
+                        <figure><a href="http://sillehv.com/kea/3.semester/content_marketing/simple/?" target="_blank">
                                 <img alt="Qries" src="img/simple.png">
                             </a></figure>
 
