@@ -21,12 +21,6 @@ ScrollReveal().reveal('.opgave5', {
 ScrollReveal().reveal('.opgave6', {
     delay: 900
 });
-ScrollReveal().reveal('.opgave7', {
-    delay: 900
-});
-ScrollReveal().reveal('.opgave8', {
-    delay: 900
-});
 
 
 ScrollReveal().reveal('#kompetencer', {
@@ -43,15 +37,6 @@ ScrollReveal().reveal('.blomster_under_erfaring', {
 });
 
 ScrollReveal().reveal('#kontakt', {
-    delay: 900
-});
-ScrollReveal().reveal('.', {
-    delay: 900
-});
-ScrollReveal().reveal('.', {
-    delay: 900
-});
-ScrollReveal().reveal('.', {
     delay: 900
 });
 

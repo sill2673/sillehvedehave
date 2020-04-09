@@ -43,6 +43,10 @@ p {
     font-family: 'Carrois Gothic SC', sans-serif;
 }
 
+a {
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
 .navbar-brand img {
     width: 30%;
 }
@@ -69,7 +73,7 @@ p {
     text-align: center;
     position: absolute;
     top: -430px;
-    left: 14%;
+    left: 15%;
 }
 
 .top_blomster img {
@@ -87,7 +91,7 @@ p {
 .blomst2 {
     position: absolute;
     top: -730px;
-    left: 70%;
+    left: 80%;
 }
 
 /****       ****/
@@ -100,7 +104,7 @@ p {
 #cv_blomster img {
     width: 60%;
     position: absolute;
-    top: 20px;
+    top: 40px;
     left: 40%;
     opacity: 30%
 }
@@ -108,9 +112,13 @@ p {
 .cvbillede {
     width: 300px;
     max-width: 400px;
-    padding: 70px 0px 100px 0px;
+    padding: 30px 0px 20px 0px;
     /*    margin-left: 70px;
     */
+}
+
+.cv_top p {
+    font-size: 18px;
 }
 
 /*
@@ -211,7 +219,6 @@ p {
 .hover figure:hover img {
     filter: grayscale(0);
     filter: grayscale(0);
-
 }
 
 
@@ -230,7 +237,7 @@ p {
 }
 
 .some {
-    padding: 100px 0px 0px 0px;
+    padding: 50px 0px 10px 0px;
 }
 
 .some img {
@@ -245,7 +252,7 @@ p {
 .kontakt_blomster {
     position: relative;
     top: 20px;
-    left: 20%;
+    left: 19%;
 }
 
 
@@ -343,7 +350,24 @@ p {
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+    .top_overskrift {
+        text-align: center;
+        position: absolute;
+        top: -430px;
+        left: 20%;
+    }
+
+    #mineOpgaver {
+        padding: 100px 100px 10px 100px;
+    }
+
+    #cv img {
+        padding: 0px 0px 0px 0px;
+    }
+
+}
 
 /* END "sm-" 576px and up */
 
@@ -355,6 +379,7 @@ p {
 
     #cv img {
         margin-left: 0px;
+        width: 50%;
     }
 
     #cv_blomster img {
@@ -371,7 +396,7 @@ p {
     .top_overskrift {
         position: absolute;
         top: -450px;
-        left: 10%;
+        left: 18%;
         color: white;
         text-align: center;
     }
@@ -405,9 +430,9 @@ p {
 
     .kontakt_blomster img {
         position: relative;
-        top: -10px;
+        top: 15px;
         left: 30%;
-        width: 90%;
+        width: 80%;
     }
 
 
@@ -509,13 +534,6 @@ p {
 /**************************************************/
 @media (min-width: 992px) {
 
-    #cv_blomster img {
-        width: 40%;
-        position: absolute;
-        left: 40%;
-        top: 40px;
-    }
-
     .top_overskrift h1 {
         font-size: 95px;
         line-height: 140px;
@@ -524,7 +542,7 @@ p {
     .top_overskrift {
         position: absolute;
         top: -440px;
-        left: 20%;
+        left: 22%;
         color: white;
         text-align: center;
     }
@@ -544,23 +562,29 @@ p {
     .blomst2 {
         position: absolute;
         top: -730px;
-        left: 70%;
+        left: 90%;
     }
 
-    #cv {}
+    #mineOpgaver {
+        padding: 100px 150px 10px 150px;
+    }
+
+    /*  cv  */
+
+
+    #cv img {
+        padding: 0px 30px 0px 0px;
+        width: 100%;
+    }
 
     .cvbillede {
         width: 100%;
         max-width: 400px;
-        padding: 40px 40px 0px 80px;
+        padding: 60px 40px 0px 80px;
     }
 
     .cv_top {
-        padding: 10px 0px 0px 0px;
-    }
-
-    #cv img {
-        margin: 0;
+        padding: 60px 0px 0px 0px;
     }
 
     #kompetencer {
@@ -574,15 +598,22 @@ p {
         opacity: 70%
     }
 
+    /*  kontakt  */
+
     #kontakt {
-        padding-top: 60px;
+        padding-top: ;
     }
 
     .kontakt_blomster img {
         position: relative;
-        top: -370px;
-        left: 90%;
-        width: 100%;
+        top: 30px;
+        left: 40%;
+        width: 85%;
+    }
+
+    .kontakt_blomster {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
     }
 
     /**************************************************/
@@ -689,8 +720,8 @@ p {
 
         .top_overskrift {
             position: absolute;
-            top: -440px;
-            left: 25%;
+            top: -460px;
+            left: 30%;
             color: white;
             text-align: center;
         }
@@ -704,24 +735,30 @@ p {
         .blomst1 {
             position: absolute;
             top: -240px;
-            left: 0%;
+            left: 30px;
         }
 
         .blomst2 {
             position: absolute;
             top: -730px;
-            left: 80%;
+            left: 90%;
         }
 
-        .cvbillede {
-            width: 100%;
-            max-width: 300px;
-            padding: 40px 0px 0px 80px;
-        }
+        /*   om     */
 
         #cv img {
             padding: 0;
             margin: 0;
+            width: 100%;
+        }
+
+        .cvbillede {
+            max-width: 300px;
+            padding: 60px 0px 0px 80px;
+        }
+
+        .cv_top {
+            padding-top: 90px;
         }
 
         .blomster_under_erfaring img {
@@ -734,6 +771,8 @@ p {
         #kompetencer {
             padding-top: 0;
         }
+
+        /*    kontakt    */
 
         #kontakt {
             padding-top: 60px;
@@ -780,7 +819,7 @@ p {
             padding: 8px 0;
             position: absolute;
             z-index: 1;
-            top: -330%;
+            top: -260%;
             left: 0%;
             margin-left: -110px;
         }
