@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {}
 
 body {
@@ -18,7 +22,7 @@ body {
 h1 {
     font-family: 'Cardo', serif;
     color: #654343;
-    font-size: 60px;
+    font-size: 65px;
 }
 
 h2 {
@@ -40,11 +44,13 @@ h5 {
 }
 
 p {
-    font-family: 'Carrois Gothic SC', sans-serif;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 20px;
 }
 
 a {
     font-family: 'Carrois Gothic SC', sans-serif;
+    text-decoration: none !important;
 }
 
 .navbar-brand img {
@@ -53,6 +59,10 @@ a {
 
 .nav-item {
     text-align: center;
+}
+
+.forsvind_logo {
+    display: none;
 }
 
 
@@ -68,7 +78,7 @@ a {
         text-align: center;
         position: absolute;
         top: -490px !important;
-        left: 15%;
+        left: 18%;
     }
 
     .top_overskrift h1 {
@@ -195,7 +205,7 @@ a {
     text-align: center;
     position: absolute;
     top: -430px;
-    left: 15%;
+    left: 11%;
 }
 
 .top_blomster img {
@@ -206,7 +216,7 @@ a {
 
 .blomst1 {
     position: absolute;
-    top: -240px;
+    top: -210px;
     left: 2%;
 }
 
@@ -289,7 +299,8 @@ a {
 
 
 #mineOpgaver {
-    padding: 100px 30px 10px 30px;
+    padding: 20px 0px 10px 30px;
+    width: 100%;
 }
 
 #mineOpgaver img {
@@ -366,6 +377,7 @@ a {
     position: relative;
     top: 20px;
     left: 19%;
+    height: 100px;
 }
 
 
@@ -455,7 +467,110 @@ a {
 /**************************************************/
 
 
+footer img {
+    margin-left: 20px;
+}
 
+footer span {
+    position: relative;
+    bottom: 4px;
+}
+
+.center-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    top: -120px;
+    transform: rotate(90deg);
+}
+
+#cta {
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+#cta .arrow {
+    left: 30%;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    top: 11.5px;
+}
+
+.segunda {
+    margin-left: 10px;
+}
+
+.next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.round:hover .arrow {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.round:hover .arrow.primera {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 
 
@@ -469,7 +584,7 @@ a {
         text-align: center;
         position: absolute;
         top: -430px;
-        left: 20%;
+        left: 24%;
     }
 
     #mineOpgaver {
@@ -509,7 +624,7 @@ a {
     .top_overskrift {
         position: absolute;
         top: -450px;
-        left: 18%;
+        left: 20%;
         color: white;
         text-align: center;
     }
@@ -535,6 +650,7 @@ a {
 
     .some {
         padding: 30px 0px 0px 0px;
+        text-decoration: none;
     }
 
     .some img {
@@ -648,14 +764,14 @@ a {
 @media (min-width: 992px) {
 
     .top_overskrift h1 {
-        font-size: 95px;
+        font-size: 100px;
         line-height: 140px;
     }
 
     .top_overskrift {
         position: absolute;
-        top: -440px;
-        left: 22%;
+        top: -460px;
+        left: 25%;
         color: white;
         text-align: center;
     }
@@ -668,7 +784,7 @@ a {
 
     .blomst1 {
         position: absolute;
-        top: -190px;
+        top: -210px;
         left: 2%;
     }
 
@@ -834,9 +950,13 @@ a {
         .top_overskrift {
             position: absolute;
             top: -460px;
-            left: 30%;
+            left: 29%;
             color: white;
             text-align: center;
+        }
+
+        .top_overskrift h1 {
+            font-size: 100px;
         }
 
         .top_blomster img {
@@ -847,13 +967,13 @@ a {
 
         .blomst1 {
             position: absolute;
-            top: -190px;
+            top: -200;
             left: 30px;
         }
 
         .blomst2 {
             position: absolute;
-            top: -730px;
+            top: -720px;
             left: 90%;
         }
 
@@ -994,6 +1114,5 @@ a {
 
         /* END "xl-" 1200px and up */
     }
-
 
 }

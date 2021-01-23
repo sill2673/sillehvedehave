@@ -23,23 +23,13 @@ ScrollReveal().reveal('.opgave6', {
 });
 
 
-ScrollReveal().reveal('#kompetencer', {
-    delay: 900
-});
-ScrollReveal().reveal('#cv', {
-    delay: 900
-});
+
 ScrollReveal().reveal('.popup', {
     delay: 900
 });
 ScrollReveal().reveal('.blomster_under_erfaring', {
     delay: 900
 });
-
-ScrollReveal().reveal('#kontakt', {
-    delay: 900
-});
-
 
 
 
